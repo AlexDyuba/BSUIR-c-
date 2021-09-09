@@ -1,0 +1,11 @@
+# intelliJ
+out/
+.idea/
+target/
+*.iml
+
+.DS_Store
+
+CMakeLists.txt
+
+cmake-build-debug/
