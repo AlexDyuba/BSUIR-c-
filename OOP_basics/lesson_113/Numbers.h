@@ -7,14 +7,7 @@
 
 
 class Numbers {
-public:
-    Numbers();
-    void set(int, int);
-    void show();
 
-private:
-    int first_number;
-    int second_number;
 };
 
 
