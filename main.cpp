@@ -4,6 +4,7 @@
 #include "OOP_basics/lesson_114/task_2/Stack.h"
 #include "OOP_basics/lesson_115/task_1/Ball.h"
 #include "OOP_basics/lesson_116/task_1/RGBA.h"
+#include "OOP_basics/lesson_117/task_1/Thing.h"
 
 using namespace std;
 
@@ -63,6 +64,19 @@ int main() {
 //*********************************    Lesson 116
 //    RGBA color(0, 135, 135);
 //    color.print();
+
+//*********************************    Lesson 117
+    Thing defl;
+    defl.print();
+
+    Thing red("red");
+    red.print();
+
+    Thing thirty(30.0);
+    thirty.print();
+
+    Thing redThirty("red", 30.0);
+    redThirty.print();
 
     return 0;
 }
