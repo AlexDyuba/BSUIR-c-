@@ -2,6 +2,7 @@
 #include "OOP_basics/lesson_113/task_1/Numbers.h"
 #include "OOP_basics/lesson_114/task_1/Numbers.h"
 #include "OOP_basics/lesson_114/task_2/Stack.h"
+#include "OOP_basics/lesson_115/task_1/Ball.h"
 
 using namespace std;
 
@@ -24,22 +25,35 @@ int main() {
 //        cout << "False" << endl;
 //    }
 
-    Stack stack;
-    stack.reset();
+//    Lesson 114 task 2
+//    Stack stack;
+//    stack.reset();
+//
+//    stack.print();
+//
+//    stack.push(3);
+//    stack.push(7);
+//    stack.push(5);
+//    stack.print();
+//
+//    stack.pop();
+//    stack.print();
+//
+//    stack.pop();
+//    stack.pop();
+//
+//    stack.print();
+    Ball def;
+    def.print();
 
-    stack.print();
+    Ball black("black");
+    black.print();
 
-    stack.push(3);
-    stack.push(7);
-    stack.push(5);
-    stack.print();
+    Ball thirty(30.0);
+    thirty.print();
 
-    stack.pop();
-    stack.print();
+    Ball blackThirty("black", 30.0);
+    blackThirty.print();
 
-    stack.pop();
-    stack.pop();
-
-    stack.print();
     return 0;
 }
