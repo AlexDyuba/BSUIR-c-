@@ -1,10 +1,11 @@
 //
-// Created by Alex on 9/10/21.
+// Created by alexdyuba on 10.09.21.
 //
-
 
 #include "Numbers.h"
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 void Numbers::set(int first_number, int second_number) {
@@ -12,11 +13,6 @@ void Numbers::set(int first_number, int second_number) {
     this->second_number = second_number;
 }
 
-void Numbers::show() {
-    cout << first_number << endl;
-    cout << second_number << endl;
-}
-
-Numbers::Numbers() {
-
+void Numbers::print() {
+    cout << first_number << setw(4) << second_number;
 }

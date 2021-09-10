@@ -1,10 +1,11 @@
 #include <iostream>
-#include "OOP_basics/lesson_113/Numbers.h"
+#include "OOP_basics/lesson_113/task_1/Numbers.h"
+
+using namespace std;
 
 int main() {
-    // les_112 task 1
-    Numbers numbers;
+    Numbers numbers{};
     numbers.set(1, 2);
-    numbers.show();
+    numbers.print();
     return 0;
 }
