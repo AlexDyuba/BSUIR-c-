@@ -8,6 +8,7 @@
 #include "OOP_basics/lesson_126/task_1/Point3D.h"
 #include "OOP_basics/lesson_126/task_1/Vector3D.h"
 #include "OOP_basics/result_test/task_1/Point.h"
+#include "OOP_basics/result_test/task_2/Welcome.h"
 
 using namespace std;
 
@@ -98,6 +99,11 @@ int main() {
 //    second.print();
 //    std::cout << "Distance between two points: " << first.distanceTo(second) << '\n';
 //    std::cout << "Distance between two points: " << distanceFrom(first, second) << '\n';
+
+//*********************************    result test task 2
+
+//    Welcome welcome;
+//    welcome.print();
 
     return 0;
 }
