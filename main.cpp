@@ -11,6 +11,9 @@
 #include "OOP_basics/result_test/task_2/Welcome.h"
 #include "OOP_basics/result_test/task_3/Monster.h"
 #include "OOP_basics/result_test/task_3/MonsterGenerator.h"
+#include "OOP_basics/result_test/task_4/Card.h"
+#include "OOP_basics/result_test/task_4/Deck.h"
+#include "OOP_basics/result_test/task_4/Game.h"
 
 using namespace std;
 
@@ -107,10 +110,30 @@ int main() {
 //    Welcome welcome;
 //    welcome.print();
 
+//*********************************    result test task 3
+
+//    srand(static_cast<unsigned int>(time(0))); // используем системные часы в качестве стартового значения
+//    Monster m = MonsterGenerator::generateMonster();
+//    m.print();
+//    Monster m1 = MonsterGenerator::generateMonster();
+//    m1.print();
+
+//*********************************    result test task 4
+
+//    const Card cardQueenHearts(Card::RANK_QUEEN, Card::SUIT_HEART);
+//    cardQueenHearts.printCard();
+//    std::cout << " has the value " << cardQueenHearts.getCardValue() << '\n';
+
     srand(static_cast<unsigned int>(time(0))); // используем системные часы в качестве стартового значения
-    Monster m = MonsterGenerator::generateMonster();
-    m.print();
-    Monster m1 = MonsterGenerator::generateMonster();
-    m1.print();
+
+    Deck deck;
+    deck.printDeck();
+    deck.shuffleDeck();
+    deck.printDeck();
+
+//    Deck deck;
+//    deck.shuffleDeck();
+    Game::playBlackjack(deck);
+
     return 0;
 }
