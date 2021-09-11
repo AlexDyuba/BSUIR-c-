@@ -5,6 +5,8 @@
 #include "OOP_basics/lesson_115/task_1/Ball.h"
 #include "OOP_basics/lesson_116/task_1/RGBA.h"
 #include "OOP_basics/lesson_117/task_1/Thing.h"
+#include "OOP_basics/lesson_126/task_1/Point3D.h"
+#include "OOP_basics/lesson_126/task_1/Vector3D.h"
 
 using namespace std;
 
@@ -66,17 +68,26 @@ int main() {
 //    color.print();
 
 //*********************************    Lesson 117
-    Thing defl;
-    defl.print();
+//    Thing defl;
+//    defl.print();
+//
+//    Thing red("red");
+//    red.print();
+//
+//    Thing thirty(30.0);
+//    thirty.print();
+//
+//    Thing redThirty("red", 30.0);
+//    redThirty.print();
 
-    Thing red("red");
-    red.print();
+//*********************************    Lesson 126
 
-    Thing thirty(30.0);
-    thirty.print();
+    Point3D p(3.0, 4.0, 5.0);
+    Vector3D v(3.0, 3.0, -2.0);
 
-    Thing redThirty("red", 30.0);
-    redThirty.print();
+    p.print();
+    p.moveByVector(v);
+    p.print();
 
     return 0;
 }
