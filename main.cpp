@@ -7,6 +7,7 @@
 #include "OOP_basics/lesson_117/task_1/Thing.h"
 #include "OOP_basics/lesson_126/task_1/Point3D.h"
 #include "OOP_basics/lesson_126/task_1/Vector3D.h"
+#include "OOP_basics/result_test/task_1/Point.h"
 
 using namespace std;
 
@@ -82,12 +83,21 @@ int main() {
 
 //*********************************    Lesson 126
 
-    Point3D p(3.0, 4.0, 5.0);
-    Vector3D v(3.0, 3.0, -2.0);
+//    Point3D p(3.0, 4.0, 5.0);
+//    Vector3D v(3.0, 3.0, -2.0);
+//
+//    p.print();
+//    p.moveByVector(v);
+//    p.print();
 
-    p.print();
-    p.moveByVector(v);
-    p.print();
+//*********************************    result test task 1
+
+//    Point first;
+//    Point second(2.0, 5.0);
+//    first.print();
+//    second.print();
+//    std::cout << "Distance between two points: " << first.distanceTo(second) << '\n';
+//    std::cout << "Distance between two points: " << distanceFrom(first, second) << '\n';
 
     return 0;
 }
