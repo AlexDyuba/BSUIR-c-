@@ -9,6 +9,8 @@
 #include "OOP_basics/lesson_126/task_1/Vector3D.h"
 #include "OOP_basics/result_test/task_1/Point.h"
 #include "OOP_basics/result_test/task_2/Welcome.h"
+#include "OOP_basics/result_test/task_3/Monster.h"
+#include "OOP_basics/result_test/task_3/MonsterGenerator.h"
 
 using namespace std;
 
@@ -105,5 +107,10 @@ int main() {
 //    Welcome welcome;
 //    welcome.print();
 
+    srand(static_cast<unsigned int>(time(0))); // используем системные часы в качестве стартового значения
+    Monster m = MonsterGenerator::generateMonster();
+    m.print();
+    Monster m1 = MonsterGenerator::generateMonster();
+    m1.print();
     return 0;
 }
