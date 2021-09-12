@@ -14,6 +14,7 @@
 #include "OOP_basics/result_test/task_4/Card.h"
 #include "OOP_basics/result_test/task_4/Deck.h"
 #include "OOP_basics/result_test/task_4/Game.h"
+#include "operator_overloading_c++/lessson_131/Fraction.h"
 
 using namespace std;
 
@@ -124,16 +125,36 @@ int main() {
 //    cardQueenHearts.printCard();
 //    std::cout << " has the value " << cardQueenHearts.getCardValue() << '\n';
 
-    srand(static_cast<unsigned int>(time(0))); // используем системные часы в качестве стартового значения
-
-    Deck deck;
-    deck.printDeck();
-    deck.shuffleDeck();
-    deck.printDeck();
-
+//    srand(static_cast<unsigned int>(time(0))); // используем системные часы в качестве стартового значения
+//
 //    Deck deck;
+//    deck.printDeck();
 //    deck.shuffleDeck();
-    Game::playBlackjack(deck);
+//    deck.printDeck();
+//
+////    Deck deck;
+////    deck.shuffleDeck();
+//    Game::playBlackjack(deck);
+
+//*********************************    lesson 131
+
+    Fraction f1(3, 4);
+    f1.print();
+
+    Fraction f2(2, 7);
+    f2.print();
+
+    Fraction f3 = f1 * f2;
+    f3.print();
+
+    Fraction f4 = f1 * 3;
+    f4.print();
+
+    Fraction f5 = 3 * f2;
+    f5.print();
+
+    Fraction f6 = Fraction(1, 2) * Fraction(2, 3) * Fraction(3, 4);
+    f6.print();
 
     return 0;
 }
