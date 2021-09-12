@@ -15,6 +15,8 @@
 #include "OOP_basics/result_test/task_4/Deck.h"
 #include "OOP_basics/result_test/task_4/Game.h"
 #include "operator_overloading_c++/lessson_131/Fraction.h"
+#include "operator_overloading_c++/lessson_133/Frection1.h"
+
 
 using namespace std;
 
@@ -137,24 +139,35 @@ int main() {
 //    Game::playBlackjack(deck);
 
 //*********************************    lesson 131
+//
+//    Fraction f1(3, 4);
+//    f1.print();
+//
+//    Fraction f2(2, 7);
+//    f2.print();
+//
+//    Fraction f3 = f1 * f2;
+//    f3.print();
+//
+//    Fraction f4 = f1 * 3;
+//    f4.print();
+//
+//    Fraction f5 = 3 * f2;
+//    f5.print();
+//
+//    Fraction f6 = Fraction(1, 2) *
+//            Fraction(2, 3) * Fraction(3, 4);
+//    f6.print();
 
-    Fraction f1(3, 4);
-    f1.print();
+    Frection1 f1;
+    std::cout << "Enter fraction 1: ";
+    std::cin >> f1;
 
-    Fraction f2(2, 7);
-    f2.print();
+    Frection1 f2;
+    std::cout << "Enter fraction 2: ";
+    std::cin >> f2;
 
-    Fraction f3 = f1 * f2;
-    f3.print();
-
-    Fraction f4 = f1 * 3;
-    f4.print();
-
-    Fraction f5 = 3 * f2;
-    f5.print();
-
-    Fraction f6 = Fraction(1, 2) * Fraction(2, 3) * Fraction(3, 4);
-    f6.print();
+    std::cout << f1 << " * " << f2 << " is " << f1 * f2 << '\n';
 
     return 0;
 }
