@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "OOP_basics/lesson_113/task_1/Numbers.h"
 #include "OOP_basics/lesson_114/task_1/Numbers.h"
 #include "OOP_basics/lesson_114/task_2/Stack.h"
@@ -17,6 +18,8 @@
 #include "operator_overloading_c++/lessson_131/Fraction.h"
 #include "operator_overloading_c++/lessson_133/Frection1.h"
 #include "operator_overloading_c++/lessson_135/Something.h"
+#include "operator_overloading_c++/lessson_136/task_1/Dollars.h"
+#include "operator_overloading_c++/lessson_136/task_2/Car.h"
 
 
 using namespace std;
@@ -178,6 +181,32 @@ int main() {
 //    cout << (-something).getA() << endl;
 //    cout << (+something).getA() << endl;
 
+//*********************************    lesson 136 task 1
+
+//    Dollars ten(10);
+//    Dollars seven(7);
+//
+//    if (ten > seven)
+//        std::cout << "Ten dollars are greater than seven dollars.\n";
+//    if (ten >= seven)
+//        std::cout << "Ten dollars are greater than or equal to seven dollars.\n";
+//    if (ten < seven)
+//        std::cout << "Seven dollars are greater than ten dollars.\n";
+//    if (ten <= seven)
+//        std::cout << "Seven dollars are greater than or equal to ten dollars.\n";
+
+//*********************************    lesson 136 task 2
+
+    std::vector<Car> v;
+    v.push_back(Car("Ford", "Mustang"));
+    v.push_back(Car("Renault", "Logan"));
+    v.push_back(Car("Ford", "Ranger"));
+    v.push_back(Car("Renault", "Duster"));
+
+    std::sort(v.begin(), v.end()); // требуется перегрузка оператора < для класса Car
+
+    for (auto &car : v)
+        std::cout << car; // требуется перегрузка оператора << для класса Car
 
 
     return 0;
