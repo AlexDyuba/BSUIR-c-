@@ -16,6 +16,7 @@
 #include "OOP_basics/result_test/task_4/Game.h"
 #include "operator_overloading_c++/lessson_131/Fraction.h"
 #include "operator_overloading_c++/lessson_133/Frection1.h"
+#include "operator_overloading_c++/lessson_135/Something.h"
 
 
 using namespace std;
@@ -159,15 +160,25 @@ int main() {
 //            Fraction(2, 3) * Fraction(3, 4);
 //    f6.print();
 
-    Frection1 f1;
-    std::cout << "Enter fraction 1: ";
-    std::cin >> f1;
+//*********************************    lesson 133
 
-    Frection1 f2;
-    std::cout << "Enter fraction 2: ";
-    std::cin >> f2;
+//    Frection1 f1;
+//    std::cout << "Enter fraction 1: ";
+//    std::cin >> f1;
+//
+//    Frection1 f2;
+//    std::cout << "Enter fraction 2: ";
+//    std::cin >> f2;
+//
+//    std::cout << f1 << " * " << f2 << " is " << f1 * f2 << '\n';
 
-    std::cout << f1 << " * " << f2 << " is " << f1 * f2 << '\n';
+//*********************************    lesson 135
+
+//    Something something(2, 3 ,5);
+//    cout << (-something).getA() << endl;
+//    cout << (+something).getA() << endl;
+
+
 
     return 0;
 }
