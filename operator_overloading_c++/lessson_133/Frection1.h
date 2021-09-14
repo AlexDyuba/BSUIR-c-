@@ -23,7 +23,7 @@ public:
     friend Frection1 operator*(const Frection1 &f1, int value);
     friend Frection1 operator*(int value, const Frection1 &f1);
 
-    friend std::ostream& operator<<(std::ostream&, Frection1&);
+    friend std::ostream& operator<<(std::ostream&, Frection1);
 
     friend std::istream& operator>>(std::istream&, Frection1&);
 

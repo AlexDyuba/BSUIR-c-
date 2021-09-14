@@ -48,7 +48,7 @@ std::istream &operator>>(istream & in, Frection1& frection) {
     return in;
 }
 
-std::ostream &operator<<(ostream & out, Frection1& frection) {
+std::ostream &operator<<(ostream & out, Frection1 frection) {
     out << frection.m_numerator << "/" << frection.m_denominator;
     return out;
 }
