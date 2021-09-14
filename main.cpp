@@ -20,6 +20,7 @@
 #include "operator_overloading_c++/lessson_135/Something.h"
 #include "operator_overloading_c++/lessson_136/task_1/Dollars.h"
 #include "operator_overloading_c++/lessson_136/task_2/Car.h"
+#include "operator_overloading_c++/lessson_138/task_1/GradeMap.h"
 
 
 using namespace std;
@@ -197,17 +198,24 @@ int main() {
 
 //*********************************    lesson 136 task 2
 
-    std::vector<Car> v;
-    v.push_back(Car("Ford", "Mustang"));
-    v.push_back(Car("Renault", "Logan"));
-    v.push_back(Car("Ford", "Ranger"));
-    v.push_back(Car("Renault", "Duster"));
+//    std::vector<Car> v;
+//    v.push_back(Car("Ford", "Mustang"));
+//    v.push_back(Car("Renault", "Logan"));
+//    v.push_back(Car("Ford", "Ranger"));
+//    v.push_back(Car("Renault", "Duster"));
+//
+//    std::sort(v.begin(), v.end()); // требуется перегрузка оператора < для класса Car
+//
+//    for (auto &car : v)
+//        std::cout << car; // требуется перегрузка оператора << для класса Car
 
-    std::sort(v.begin(), v.end()); // требуется перегрузка оператора < для класса Car
+//***********************************    lesson 138 task 1
 
-    for (auto &car : v)
-        std::cout << car; // требуется перегрузка оператора << для класса Car
-
+    GradeMap grades;
+    grades["John"] = 'A';
+    grades["Martin"] = 'B';
+    std::cout << "John has a grade of " << grades["John"] << '\n';
+    std::cout << "Martin has a grade of " << grades["Martin"] << '\n';
 
     return 0;
 }
