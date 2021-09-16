@@ -22,6 +22,7 @@
 #include "operator_overloading_c++/lessson_136/task_2/Car.h"
 #include "operator_overloading_c++/lessson_138/task_1/GradeMap.h"
 #include "operator_overloading_c++/result_test/task_2/Average.h"
+#include "operator_overloading_c++/result_test/task_3/IntArray.h"
 
 
 using namespace std;
@@ -220,25 +221,35 @@ int main() {
 
 //***********************************    result test task 2
 
-    Average avg;
+//    Average avg;
+//
+//    avg += 5;
+//    std::cout << avg << '\n'; // 5 / 1 = 5
+//
+//    avg += 9;
+//    std::cout << avg << '\n'; // (5 + 9) / 2 = 7
+//
+//    avg += 19;
+//    std::cout << avg << '\n'; // (5 + 9 + 19) / 3 = 11
+//
+//    avg += -9;
+//    std::cout << avg << '\n'; // (5 + 9 + 19 - 9) / 4 = 6
+//
+//    (avg += 7) += 11; // выполнение цепочки операций
+//    std::cout << avg << '\n'; // (5 + 9 + 19 - 9 + 7 + 11) / 6 = 7
+//
+//    Average copy = avg;
+//    std::cout << copy << '\n';
 
-    avg += 5;
-    std::cout << avg << '\n'; // 5 / 1 = 5
+//***********************************    result test task 3
 
-    avg += 9;
-    std::cout << avg << '\n'; // (5 + 9) / 2 = 7
+    IntArray a = IntArray::fillArray();
+    std::cout << a << '\n';
 
-    avg += 19;
-    std::cout << avg << '\n'; // (5 + 9 + 19) / 3 = 11
+    IntArray b(1);
+    a = a;
+    b = a;
 
-    avg += -9;
-    std::cout << avg << '\n'; // (5 + 9 + 19 - 9) / 4 = 6
-
-    (avg += 7) += 11; // выполнение цепочки операций
-    std::cout << avg << '\n'; // (5 + 9 + 19 - 9 + 7 + 11) / 6 = 7
-
-    Average copy = avg;
-    std::cout << copy << '\n';
-
+    std::cout << b << '\n';
     return 0;
 }
