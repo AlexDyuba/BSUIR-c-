@@ -25,6 +25,7 @@
 #include "operator_overloading_c++/result_test/task_3/IntArray.h"
 #include "types_of_connection/lesson_148/Worker.h"
 #include "types_of_connection/lesson_148/Department.h"
+#include "types_of_connection/lesson_152/ArrayInt.h"
 
 
 using namespace std;
@@ -255,29 +256,42 @@ int main() {
 //    std::cout << b << '\n';
 
 //***********************************    les 148
+//
+//    auto *w1 = new Worker("Anton");
+//    auto *w2 = new Worker("Ivan");
+//    auto *w3 = new Worker("Max");
+//
+//    {
+//        // Создаем Отдел и передаем Работников в качестве параметров конструктора
+//        Department department; // создаем пустой Отдел
+//        department.add(w1);
+//        department.add(w2);
+//        department.add(w3);
+//
+//        std::cout << department;
+//
+//    } // department выходит из области видимости и уничтожается здесь
+//
+//    std::cout << w1->getName() << " still exists!\n";
+//    std::cout << w2->getName() << " still exists!\n";
+//    std::cout << w3->getName() << " still exists!\n";
+//
+//    delete w1;
+//    delete w2;
+//    delete w3;
 
-    auto *w1 = new Worker("Anton");
-    auto *w2 = new Worker("Ivan");
-    auto *w3 = new Worker("Max");
+//***********************************    les 152
 
-    {
-        // Создаем Отдел и передаем Работников в качестве параметров конструктора
-        Department department; // создаем пустой Отдел
-        department.add(w1);
-        department.add(w2);
-        department.add(w3);
 
-        std::cout << department;
+    ArrayInt array { 7, 6, 5, 4, 3, 2, 1 }; // список инициализации
+    for (int count = 0; count < array.getLength(); ++count)
+        std::cout << array[count] << ' ';
 
-    } // department выходит из области видимости и уничтожается здесь
+    std::cout << '\n';
 
-    std::cout << w1->getName() << " still exists!\n";
-    std::cout << w2->getName() << " still exists!\n";
-    std::cout << w3->getName() << " still exists!\n";
+    array={ 1, 4, 9, 12, 15, 17, 19, 21 };
 
-    delete w1;
-    delete w2;
-    delete w3;
-
+    for (int count = 0; count < array.getLength(); ++count)
+        std::cout << array[count] << ' ';
     return 0;
 }
