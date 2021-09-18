@@ -23,6 +23,8 @@
 #include "operator_overloading_c++/lessson_138/task_1/GradeMap.h"
 #include "operator_overloading_c++/result_test/task_2/Average.h"
 #include "operator_overloading_c++/result_test/task_3/IntArray.h"
+#include "types_of_connection/lesson_148/Worker.h"
+#include "types_of_connection/lesson_148/Department.h"
 
 
 using namespace std;
@@ -243,13 +245,39 @@ int main() {
 
 //***********************************    result test task 3
 
-    IntArray a = IntArray::fillArray();
-    std::cout << a << '\n';
+//    IntArray a = IntArray::fillArray();
+//    std::cout << a << '\n';
+//
+//    IntArray b(1);
+//    a = a;
+//    b = a;
+//
+//    std::cout << b << '\n';
 
-    IntArray b(1);
-    a = a;
-    b = a;
+//***********************************    les 148
 
-    std::cout << b << '\n';
+    auto *w1 = new Worker("Anton");
+    auto *w2 = new Worker("Ivan");
+    auto *w3 = new Worker("Max");
+
+    {
+        // Создаем Отдел и передаем Работников в качестве параметров конструктора
+        Department department; // создаем пустой Отдел
+        department.add(w1);
+        department.add(w2);
+        department.add(w3);
+
+        std::cout << department;
+
+    } // department выходит из области видимости и уничтожается здесь
+
+    std::cout << w1->getName() << " still exists!\n";
+    std::cout << w2->getName() << " still exists!\n";
+    std::cout << w3->getName() << " still exists!\n";
+
+    delete w1;
+    delete w2;
+    delete w3;
+
     return 0;
 }
